@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 import cartopy.crs as ccrs
 
-data = pd.read_json('../georef-md.json')
+data = pd.read_json('./georef-md.json')
 zips=pd.DataFrame({"zip_code": data.zip_code.values, "city": data.usps_city.values, "population": data.population.values})
 lat=[]
 lon=[]
